@@ -1,0 +1,105 @@
+{
+  "llm_model": "qwen",
+  "llm_label": "Qwen3.8-27B via llama.cpp",
+  "embedding_model": "intfloat/multilingual-e5-large",
+  "turns": [
+    {
+      "role": "élève",
+      "question": "Le téléphone est-il autorisé en classe ?",
+      "answer": "Non, l’usage du téléphone portable est interdit dans les salles de cours. Un enseignant peut toutefois l’autoriser à des fins pédagogiques [1].",
+      "levels_searched": [
+        "level1"
+      ],
+      "latency_ms": 3935,
+      "wall_s": 3.94,
+      "sources": [
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.8392
+        },
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.8295
+        },
+        {
+          "document": "stages-et-calendrier.md",
+          "level": "level1",
+          "score": 0.805
+        }
+      ]
+    },
+    {
+      "role": "élève",
+      "question": "Quel est le budget de rénovation des salles de sciences ?",
+      "answer": "Je ne trouve pas cette information dans les documents officiels. Je vous invite à contacter le secrétariat.",
+      "levels_searched": [
+        "level1"
+      ],
+      "latency_ms": 2890,
+      "wall_s": 2.89,
+      "sources": [
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.7789
+        },
+        {
+          "document": "stages-et-calendrier.md",
+          "level": "level1",
+          "score": 0.7789
+        },
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.7777
+        }
+      ]
+    },
+    {
+      "role": "direction",
+      "question": "Quel est le budget de rénovation des salles de sciences ?",
+      "answer": "Le budget de rénovation des salles de sciences est de 65 000 euros [1].",
+      "levels_searched": [
+        "level1",
+        "level2"
+      ],
+      "latency_ms": 6179,
+      "wall_s": 6.18,
+      "sources": [
+        {
+          "document": "note-interne-budget.md",
+          "level": "level2",
+          "score": 0.8552
+        },
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.7789
+        },
+        {
+          "document": "stages-et-calendrier.md",
+          "level": "level1",
+          "score": 0.7789
+        },
+        {
+          "document": "reglement-interieur.md",
+          "level": "level1",
+          "score": 0.7777
+        }
+      ]
+    },
+    {
+      "role": "élève",
+      "question": "Qui a gagné la Coupe du monde de football 2018 ?",
+      "answer": "Je ne trouve pas cette information dans les documents officiels. Je vous invite à contacter le secrétariat.",
+      "levels_searched": [
+        "level1"
+      ],
+      "latency_ms": 42,
+      "wall_s": 0.04,
+      "sources": []
+    }
+  ]
+}

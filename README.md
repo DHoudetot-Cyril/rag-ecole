@@ -20,6 +20,13 @@ Les élèves posent leurs questions (« Dans quel délai justifier une absence ?
 et obtiennent une réponse **rédigée et sourcée**, construite uniquement à partir des documents officiels.
 La direction dispose de son propre espace, avec accès aux documents internes, **qu'aucun élève ne peut atteindre**.
 
+<p align="center"><img src="docs/demo.gif" alt="Démo : réponse sourcée, isolation élève / direction, refus sans appel au LLM" width="820"></p>
+<p align="center"><sub>Quatre <b>vrais échanges</b> avec l'API, sur les documents d'exemple : réponse sourcée,
+question réservée à la direction (l'élève n'obtient rien, la direction obtient la source de niveau 2), puis
+question hors sujet refusée en 42 ms sans appeler le LLM. Rejoués depuis
+<a href="docs/demo/turns.json">turns.json</a> ; LLM de la démo : Qwen3.8-27B via llama.cpp.
+Régénérer : <code>python docs/demo/record.py</code> puis <code>uv run docs/demo/render.py</code>.</sub></p>
+
 ## ✨ Fonctionnalités
 
 - **💬 Chat en langage naturel** avec réponse en streaming et **citations numérotées** `[1]`, `[2]` renvoyant
